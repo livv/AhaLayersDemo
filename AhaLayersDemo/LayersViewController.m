@@ -11,6 +11,8 @@
 
 @interface LayersViewController ()
 
+@property (nonatomic, strong) NSArray * titles;
+
 @end
 
 @implementation LayersViewController
@@ -25,7 +27,8 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+
+    return self.titles.count;
 }
 
 
@@ -36,7 +39,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"hehe"];
     }
     
-    cell.textLabel.text = @"CAReplicatorLayer";
+    cell.textLabel.text = self.titles[indexPath.row];
     
     return cell;
 }
@@ -56,5 +59,14 @@
     [self.navigationController pushViewController:_vc animated:YES];
 }
 
+
+#pragma mark - getters 
+
+- (NSArray *)titles {
+    if (!_titles) {
+        _titles = @[@"CAReplicatorLayer"];
+    }
+    return _titles;
+}
 
 @end
