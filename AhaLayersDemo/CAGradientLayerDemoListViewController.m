@@ -67,8 +67,7 @@
 - (NSArray *)titles {
     if (!_titles) {
         _titles = @[@"Process bar",
-                    @"Activity indicator",
-                    @"Follow the leader"];
+                    @"Background"];
     }
     return _titles;
 }

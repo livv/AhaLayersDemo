@@ -114,25 +114,28 @@
     [super viewDidLoad];
     
     self.title = self.titleStr;
+    self.slider.hidden = YES;
 }
 
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    self.slider.hidden = YES;
+    
     
     switch (self.index) {
         case 0:
-            [self animation];
+            [self animation0];
             break;
-            
+        case 1:
+            [self animation1];
+            break;
         default:
             break;
     }
 }
 
-- (void)animation {
+- (void)animation0 {
     
     self.slider.hidden = NO;
     
@@ -146,6 +149,22 @@
     [self.ahaView setProgress:sender.value];
 }
 
+
+#pragma mark - animation1
+
+- (void)animation1 {
+    
+    CAGradientLayer * layer = [CAGradientLayer layer];
+    
+    layer.frame = self.view.bounds;
+    layer.opacity = 0.6f;
+    layer.colors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blueColor].CGColor];
+    layer.locations = @[@0.2, @0.5, @0.8];
+    layer.startPoint = CGPointMake(0, 0);
+    layer.endPoint = CGPointMake(1.0, 1.0);
+    
+    [self.view.layer addSublayer:layer];
+}
 
 
 @end
