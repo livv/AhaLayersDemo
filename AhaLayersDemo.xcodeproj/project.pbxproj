@@ -17,6 +17,8 @@
 		B64E97111C21052C003B59BB /* CAReplicatorLayerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64E970F1C21052C003B59BB /* CAReplicatorLayerDemoViewController.xib */; };
 		B64E97151C210554003B59BB /* CAReplicatorLayerDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64E97131C210554003B59BB /* CAReplicatorLayerDemoListViewController.m */; };
 		B64E97161C210554003B59BB /* CAReplicatorLayerDemoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64E97141C210554003B59BB /* CAReplicatorLayerDemoListViewController.xib */; };
+		B66056501C23B287002C6A3A /* CAEmitterLayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B660564E1C23B287002C6A3A /* CAEmitterLayerDemoViewController.m */; };
+		B66056511C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B660564F1C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		B64E97121C210554003B59BB /* CAReplicatorLayerDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAReplicatorLayerDemoListViewController.h; sourceTree = "<group>"; };
 		B64E97131C210554003B59BB /* CAReplicatorLayerDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAReplicatorLayerDemoListViewController.m; sourceTree = "<group>"; };
 		B64E97141C210554003B59BB /* CAReplicatorLayerDemoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAReplicatorLayerDemoListViewController.xib; sourceTree = "<group>"; };
+		B660564D1C23B287002C6A3A /* CAEmitterLayerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerDemoViewController.h; sourceTree = "<group>"; };
+		B660564E1C23B287002C6A3A /* CAEmitterLayerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerDemoViewController.m; sourceTree = "<group>"; };
+		B660564F1C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAEmitterLayerDemoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,7 @@
 		B64E96EC1C210370003B59BB /* AhaLayersDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B660564C1C23B26D002C6A3A /* CAEmitterLayer */,
 				B64E970C1C210512003B59BB /* CAReplicatorLayer */,
 				B64E96F01C210370003B59BB /* AppDelegate.h */,
 				B64E96F11C210370003B59BB /* AppDelegate.m */,
@@ -101,6 +107,16 @@
 				B64E97141C210554003B59BB /* CAReplicatorLayerDemoListViewController.xib */,
 			);
 			name = CAReplicatorLayer;
+			sourceTree = "<group>";
+		};
+		B660564C1C23B26D002C6A3A /* CAEmitterLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B660564D1C23B287002C6A3A /* CAEmitterLayerDemoViewController.h */,
+				B660564E1C23B287002C6A3A /* CAEmitterLayerDemoViewController.m */,
+				B660564F1C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib */,
+			);
+			name = CAEmitterLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +180,7 @@
 				B64E97161C210554003B59BB /* CAReplicatorLayerDemoListViewController.xib in Resources */,
 				B64E96FD1C210370003B59BB /* Assets.xcassets in Resources */,
 				B64E97111C21052C003B59BB /* CAReplicatorLayerDemoViewController.xib in Resources */,
+				B66056511C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib in Resources */,
 				B64E970B1C2103D5003B59BB /* LayersViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +196,7 @@
 				B64E970A1C2103D5003B59BB /* LayersViewController.m in Sources */,
 				B64E96F21C210370003B59BB /* AppDelegate.m in Sources */,
 				B64E97101C21052C003B59BB /* CAReplicatorLayerDemoViewController.m in Sources */,
+				B66056501C23B287002C6A3A /* CAEmitterLayerDemoViewController.m in Sources */,
 				B64E96EF1C210370003B59BB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +336,7 @@
 				B64E97061C210370003B59BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

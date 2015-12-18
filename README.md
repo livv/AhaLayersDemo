@@ -1,7 +1,7 @@
 # AhaLayersDemo
 * CAReplicatorLayer
+* CAEmitterLayer
 * ~~CAGradientLayer~~
-* ~~CAEmitterLayer~~
 * ~~CAScrollLayer~~
 * ~~CATiledLayer~~
 * ~~CATransformLayer~~

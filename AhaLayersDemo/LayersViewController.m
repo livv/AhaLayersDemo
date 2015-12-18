@@ -8,6 +8,7 @@
 
 #import "LayersViewController.h"
 #import "CAReplicatorLayerDemoListViewController.h"
+#import "CAEmitterLayerDemoViewController.h"
 
 @interface LayersViewController ()
 
@@ -55,8 +56,26 @@
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    CAReplicatorLayerDemoListViewController * _vc = [[CAReplicatorLayerDemoListViewController alloc] initWithNibName:@"CAReplicatorLayerDemoListViewController" bundle:nil];
-    [self.navigationController pushViewController:_vc animated:YES];
+    if ([self.titles[indexPath.row] isEqualToString:@"CAReplicatorLayer"]) {
+        
+        CAReplicatorLayerDemoListViewController * _vc = [[CAReplicatorLayerDemoListViewController alloc] initWithNibName:@"CAReplicatorLayerDemoListViewController" bundle:nil];
+        [self.navigationController pushViewController:_vc animated:YES];
+        
+    } else if ([self.titles[indexPath.row] isEqualToString:@"CAEmitterLayer"]) {
+        
+        [CAEmitterLayerDemoViewController pushWithViewController:self];
+        
+    } else if ([self.titles[indexPath.row] isEqualToString:@"CAEmitterLayer"]) {
+        
+    } else if ([self.titles[indexPath.row] isEqualToString:@"CAEmitterLayer"]) {
+        
+    } else if ([self.titles[indexPath.row] isEqualToString:@"CAEmitterLayer"]) {
+        
+    } else if ([self.titles[indexPath.row] isEqualToString:@"CAEmitterLayer"]) {
+        
+    }
+    
+    
 }
 
 
@@ -64,7 +83,8 @@
 
 - (NSArray *)titles {
     if (!_titles) {
-        _titles = @[@"CAReplicatorLayer"];
+        _titles = @[@"CAReplicatorLayer",
+                    @"CAEmitterLayer"];
     }
     return _titles;
 }
