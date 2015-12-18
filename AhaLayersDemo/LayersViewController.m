@@ -9,6 +9,7 @@
 #import "LayersViewController.h"
 #import "CAReplicatorLayerDemoListViewController.h"
 #import "CAEmitterLayerDemoViewController.h"
+#import "CAGradientLayerDemoListViewController.h"
 
 @interface LayersViewController ()
 
@@ -65,7 +66,9 @@
         
         [CAEmitterLayerDemoViewController pushWithViewController:self];
         
-    } else if ([self.titles[indexPath.row] isEqualToString:@"CAEmitterLayer"]) {
+    } else if ([self.titles[indexPath.row] isEqualToString:@"CAGradientLayer"]) {
+        
+        [CAGradientLayerDemoListViewController pushWithViewController:self];
         
     } else if ([self.titles[indexPath.row] isEqualToString:@"CAEmitterLayer"]) {
         
@@ -84,7 +87,8 @@
 - (NSArray *)titles {
     if (!_titles) {
         _titles = @[@"CAReplicatorLayer",
-                    @"CAEmitterLayer"];
+                    @"CAEmitterLayer",
+                    @"CAGradientLayer"];
     }
     return _titles;
 }

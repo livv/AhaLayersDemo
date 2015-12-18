@@ -19,6 +19,10 @@
 		B64E97161C210554003B59BB /* CAReplicatorLayerDemoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64E97141C210554003B59BB /* CAReplicatorLayerDemoListViewController.xib */; };
 		B66056501C23B287002C6A3A /* CAEmitterLayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B660564E1C23B287002C6A3A /* CAEmitterLayerDemoViewController.m */; };
 		B66056511C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B660564F1C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib */; };
+		B66056561C23BB3E002C6A3A /* CAGradientLayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66056541C23BB3E002C6A3A /* CAGradientLayerDemoViewController.m */; };
+		B66056571C23BB3E002C6A3A /* CAGradientLayerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66056551C23BB3E002C6A3A /* CAGradientLayerDemoViewController.xib */; };
+		B660565B1C23D417002C6A3A /* CAGradientLayerDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66056591C23D417002C6A3A /* CAGradientLayerDemoListViewController.m */; };
+		B660565C1C23D417002C6A3A /* CAGradientLayerDemoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B660565A1C23D417002C6A3A /* CAGradientLayerDemoListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,12 @@
 		B660564D1C23B287002C6A3A /* CAEmitterLayerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerDemoViewController.h; sourceTree = "<group>"; };
 		B660564E1C23B287002C6A3A /* CAEmitterLayerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerDemoViewController.m; sourceTree = "<group>"; };
 		B660564F1C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAEmitterLayerDemoViewController.xib; sourceTree = "<group>"; };
+		B66056531C23BB3E002C6A3A /* CAGradientLayerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerDemoViewController.h; sourceTree = "<group>"; };
+		B66056541C23BB3E002C6A3A /* CAGradientLayerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerDemoViewController.m; sourceTree = "<group>"; };
+		B66056551C23BB3E002C6A3A /* CAGradientLayerDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAGradientLayerDemoViewController.xib; sourceTree = "<group>"; };
+		B66056581C23D417002C6A3A /* CAGradientLayerDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerDemoListViewController.h; sourceTree = "<group>"; };
+		B66056591C23D417002C6A3A /* CAGradientLayerDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerDemoListViewController.m; sourceTree = "<group>"; };
+		B660565A1C23D417002C6A3A /* CAGradientLayerDemoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAGradientLayerDemoListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 		B64E96EC1C210370003B59BB /* AhaLayersDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B66056521C23BB2C002C6A3A /* CAGradientLayer */,
 				B660564C1C23B26D002C6A3A /* CAEmitterLayer */,
 				B64E970C1C210512003B59BB /* CAReplicatorLayer */,
 				B64E96F01C210370003B59BB /* AppDelegate.h */,
@@ -117,6 +128,19 @@
 				B660564F1C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib */,
 			);
 			name = CAEmitterLayer;
+			sourceTree = "<group>";
+		};
+		B66056521C23BB2C002C6A3A /* CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B66056531C23BB3E002C6A3A /* CAGradientLayerDemoViewController.h */,
+				B66056541C23BB3E002C6A3A /* CAGradientLayerDemoViewController.m */,
+				B66056551C23BB3E002C6A3A /* CAGradientLayerDemoViewController.xib */,
+				B66056581C23D417002C6A3A /* CAGradientLayerDemoListViewController.h */,
+				B66056591C23D417002C6A3A /* CAGradientLayerDemoListViewController.m */,
+				B660565A1C23D417002C6A3A /* CAGradientLayerDemoListViewController.xib */,
+			);
+			name = CAGradientLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +201,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64E97001C210370003B59BB /* LaunchScreen.storyboard in Resources */,
+				B660565C1C23D417002C6A3A /* CAGradientLayerDemoListViewController.xib in Resources */,
 				B64E97161C210554003B59BB /* CAReplicatorLayerDemoListViewController.xib in Resources */,
 				B64E96FD1C210370003B59BB /* Assets.xcassets in Resources */,
+				B66056571C23BB3E002C6A3A /* CAGradientLayerDemoViewController.xib in Resources */,
 				B64E97111C21052C003B59BB /* CAReplicatorLayerDemoViewController.xib in Resources */,
 				B66056511C23B287002C6A3A /* CAEmitterLayerDemoViewController.xib in Resources */,
 				B64E970B1C2103D5003B59BB /* LayersViewController.xib in Resources */,
@@ -193,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64E97151C210554003B59BB /* CAReplicatorLayerDemoListViewController.m in Sources */,
+				B660565B1C23D417002C6A3A /* CAGradientLayerDemoListViewController.m in Sources */,
+				B66056561C23BB3E002C6A3A /* CAGradientLayerDemoViewController.m in Sources */,
 				B64E970A1C2103D5003B59BB /* LayersViewController.m in Sources */,
 				B64E96F21C210370003B59BB /* AppDelegate.m in Sources */,
 				B64E97101C21052C003B59BB /* CAReplicatorLayerDemoViewController.m in Sources */,
